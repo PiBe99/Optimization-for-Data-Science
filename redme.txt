@@ -1,0 +1,38 @@
+----------- 
+CODICE
+-----------
+Il codice può essere eseguito partendo dallo script 'solutorGurobi.py' e  settare i parametri da voler utilizzare nella sezione 'params_list'. 
+Questo script restituirà, scrivendo nel file log, soluzione trovata dal FrankWolfe e quella calcolata dal Solutor General Purpose per poter confrontare i risultati.
+
+Sarà possibile scegliere quale\quali algoritmi di stepsize utilizzare passando una lista nel parametro 'search_methods' scegliendo tra 'exact','linear','fixed'.
+
+Lo script AllFunc.py racchiude tutte le funzioni programmate e commentate per facilitare l'importazione al momento del test dei risultati richiamando un singolo file.
+
+Avendo impostato un seed di riferimento la funzione Data_Generator, anche se costruita utilizzando funzioni di generazione numerica randomica, manterrà una coerenza nella generazione dei dati rispetto ai risultati riportati nel report e nei file log, per questo motivo i dati non sono stati esportati e memorizzati in .csv o altri formati.
+
+Le librerie utilizzate sono:
+
+numpy
+matplotlib
+time
+Gurobi
+scipy
+
+-----------
+FILE DI LOG
+-----------
+
+Per quanto riguarda la cartella File Log, nella cartella sono presenti 5 file di log
+
+- FW_log_10, FW_log_100, FW_log_1000 che fanno riferimento ai risultati ottenuti dalle simulazioni riportati in Tabella 3 nel report.
+- FW_log_density fa riferimento alle simulazioni effettuate cambiando la densità e impostando gli esperimenti a densità = 0.5 e 0.1 riportati
+  in tabella 4 e 5
+- log_file_solutor riporta i risultati ottenuti eseguedo il file script 'solutorGuroby.py' quindi i dati del confronto tra il metodo Frank Wolfe e i risultati del solutor,
+  anch'essi riportati e tabellati in Tabella 6 del report.
+
+
+-----------
+IMMAGINI DI CONVERGENZA
+-----------
+
+Contiene i plot inseriti anche nel report
